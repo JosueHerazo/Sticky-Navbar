@@ -1,0 +1,208 @@
+body{
+    margin: 0;
+    background-color: black;
+
+}
+
+.top-container{
+    background-image: url("https://media.istockphoto.com/id/911870596/es/foto/primer-plano-de-un-conjunto-de-herramientas-de-afeitar-en-una-barber%C3%ADa.jpg?s=612x612&w=0&k=20&c=DmcgtuvbNjene8qP91zBpBHZ7OfPD8sMcWMa0-FziA4=");
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    display: block;
+    height: 100vh;
+    
+
+}
+.top-container h1{
+    position: absolute;
+    top: 30%;
+    left: 10px;
+    color: white;
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+    
+
+}
+.top-container h3{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+
+   
+    align-items: center;
+    text-align: center;
+    color: white;
+
+}
+.ubicacion  h2{
+    color: white;
+    display: grid;
+    grid-template-columns: auto;
+    cursor: pointer;
+
+}
+.ubicacion  h2:hover{
+    color: blue;
+}
+.top-container h4{
+    position: absolute;
+    top: 60%;
+    left: 0%;
+    color: white;
+}
+
+.ubicacion a {
+    text-decoration: none;
+}
+.ubicacion p{
+    color: white;
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    cursor: pointer;
+}
+.ubicacion p:hover{
+    color: red;
+}
+.ubicacion .fa-solid{
+    color: white;
+    cursor: pointer;
+}
+.ubicacion .fa-solid:hover{
+    color: red;
+}
+
+.text{
+    margin: 50px 5%;
+    font-family: sans-serif;
+}
+.navbar{
+    display: flex;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,.3 );
+    transition: background-color 0.4s;
+}
+.navbar ul{
+    display: flex;
+    list-style-type: none;
+
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    margin: 0 10px;
+    color: black;
+    font-family: cursive;
+}
+.navbar ul li a:hover{
+    color: red;
+}
+.navbar.active{
+    background-color: black;
+}
+.navbar.active ul li a{
+    color: white;
+}
+.bottom-container ul li{
+display: grid;
+grid-template-columns: 38% auto;
+color: white;
+    
+}
+.bottom-container p{
+    color: white;
+}
+iframe .mapa{
+    margin: 50px;
+    display: flex;
+    flex-direction: center;
+    width: 400%;
+    align-items: center;
+    text-align: center;width: 100%;
+    height: 100%;
+     border-radius: 20px;
+}
+
+.bottom-container img{
+    margin: 10px;
+    padding: 10px;
+    justify-content: right;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    
+
+}
+
+
+
+
+.image-container{
+    position: relative;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    right: 50%;
+    left: 0;
+    transform-style: preserve-3d;
+    transform: perspective(1000px) rotateY(0deg);
+    transition: transform 0.7s;
+    
+}
+
+.image-container span{
+    margin: 20px;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    transform: rotateY(calc(var(--i)*45deg)) translateZ(400px);
+    transition: transfrom 0.7s;
+}
+.image-container span img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+
+}
+.btn-container{
+    position: relative;
+    width: 80%;
+}
+.btn{
+    position: absolute;
+    bottom: -80px;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn:hover{
+    filter: brightness(1.5);
+}
+#prev{
+    left: 20%;
+}
+#next{
+    right: 20%;
+}
